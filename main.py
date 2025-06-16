@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime
 
 def main():
-    print("\n📊 Memulai sistem analisis payroll...")
+    print("\n📊 Memulai sistem analisis payroll...\n")
 
     loader = DataLoader()
     df_karyawan, df_kehadiran, df_lembur, df_pelanggaran, df_bonus = loader.load_data()
