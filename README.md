@@ -18,9 +18,7 @@ Sistem ini mengelola dan menganalisis data kehadiran, performa, dan kompensasi k
 
 ---
 
-## 📦 Sumber Data
-
-🔗 [Google Drive - Data Dummy](https://drive.google.com/drive/folders/1o1scgiQmazd1ZR5lt5pk8opVavOTBCIL?usp=sharing)
+## 📦 Data
 
 <details>
 <summary>📊 Struktur Tabel Data</summary>
