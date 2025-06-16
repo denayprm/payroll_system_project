@@ -56,14 +56,17 @@ def create_monthly_summary(df_karyawan, df_kehadiran, df_lembur, df_pelanggaran,
     summary_df.fillna(0, inplace=True)
     return summary_df
 
-
 def create_daily_records(df_karyawan, df_kehadiran, df_lembur, df_pelanggaran):
     daily = df_kehadiran.merge(df_karyawan, on='karyawan_id', how='left')
     daily = daily.merge(df_lembur[['karyawan_id', 'tanggal', 'durasi_jam']], on=['karyawan_id', 'tanggal'], how='left')
     daily = daily.merge(df_pelanggaran[['karyawan_id', 'tanggal', 'sanksi_potongan']], on=['karyawan_id', 'tanggal'], how='left')
+
     daily['bulan'] = daily['tanggal'].dt.strftime('%B')
     daily['tahun'] = daily['tanggal'].dt.year
-    daily.fillna(0, inplace=True)
+
+    numeric_cols = ['durasi_jam', 'sanksi_potongan', 'keterlambatan_menit']
+    daily[numeric_cols] = daily[numeric_cols].fillna(0)
+
     return daily
 
 print("\n📊 Data Summarizer telah dilakukan...")

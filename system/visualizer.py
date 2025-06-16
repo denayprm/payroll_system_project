@@ -42,11 +42,11 @@ def visualize(summary, dept_summary):
     plt.figure(figsize=(18, 12))
 
     plt.subplot(2, 2, 1)
-    sns.barplot(x='total_compensation', y='nama', data=top10, palette='Greens_r')
+    sns.barplot(x='total_compensation', y='nama', data=top10, palette='Greens_r', hue='nama', legend=False)
     plt.title('10 Karyawan dengan Gaji Tertinggi')
 
     plt.subplot(2, 2, 2)
-    sns.barplot(x='total_compensation', y='nama', data=bottom10, palette='Reds_r')
+    sns.barplot(x='total_compensation', y='nama', data=bottom10, palette='Reds_r', hue='nama', legend=False)
     plt.title('10 Karyawan dengan Gaji Terendah')
 
     plt.subplot(2, 2, 3)
