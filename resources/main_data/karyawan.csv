@@ -1,0 +1,51 @@
+karyawan_id,nama,jabatan,departemen,tanggal_masuk,gaji_pokok,status_kepegawaian,email,nomor_telepon
+1,Fajar Rahayu,Manager,Finance,2020-04-05,15859791,Probation,fajar.rahayu@company.com,083342331444
+2,Hendra Sari,Manager,IT,2019-04-08,19239227,Probation,hendra.sari@company.com,089703905715
+3,Eko Kartika,Staff,HR,2022-10-09,6697498,Tetap,eko.kartika@company.com,087110082321
+4,Doni Hermawan,Supervisor,Finance,2019-02-13,10811315,Kontrak,doni.hermawan@company.com,088934927891
+5,Wulan Prakoso,Manager,Marketing,2023-02-13,15661023,Probation,wulan.prakoso@company.com,081298737106
+6,Ayu Kusuma,Senior Staff,IT,2020-02-13,8165905,Kontrak,ayu.kusuma@company.com,082566942273
+7,Fitri Nugroho,Supervisor,Finance,2024-11-21,10598967,Probation,fitri.nugroho@company.com,083727210979
+8,Rina Ramadhan,Supervisor,HR,2022-07-09,14672033,Tetap,rina.ramadhan@company.com,088235363119
+9,Rosa Maulani,Manager,HR,2019-06-13,17245973,Tetap,rosa.maulani@company.com,082351531223
+10,Fajar Utami,Staff,Marketing,2020-05-05,5517215,Probation,fajar.utami@company.com,087805745017
+11,Hendra Wijaya,Senior Staff,HR,2020-09-16,7381301,Tetap,hendra.wijaya@company.com,084698408854
+12,Rudi Pertiwi,Supervisor,Marketing,2023-02-13,13201254,Probation,rudi.pertiwi@company.com,089573276057
+13,Joko Prakoso,Manager,IT,2024-09-25,17238291,Probation,joko.prakoso@company.com,082461042543
+14,Maya Sari,Supervisor,Marketing,2019-12-24,12209467,Probation,maya.sari@company.com,084272602734
+15,Joko Rahayu,Senior Staff,HR,2020-06-25,7677585,Probation,joko.rahayu@company.com,084944899549
+16,Wulan Saputra,Staff,IT,2019-06-27,6691929,Kontrak,wulan.saputra@company.com,082028439863
+17,Linda Permadi,Manager,IT,2024-08-27,15580596,Probation,linda.permadi@company.com,084289233844
+18,Rudi Supriyadi,Staff,HR,2021-09-28,6272119,Kontrak,rudi.supriyadi@company.com,085141907136
+19,Rina Maulani,Supervisor,Finance,2022-11-21,13132478,Kontrak,rina.maulani@company.com,082939118223
+20,Linda Kusuma,Manager,Finance,2019-10-18,16930342,Probation,linda.kusuma@company.com,081945826486
+21,Ahmad Kartika,Manager,HR,2019-01-28,17771835,Tetap,ahmad.kartika@company.com,083208283728
+22,Doni Supriyadi,Staff,HR,2023-03-24,6961915,Probation,doni.supriyadi@company.com,087769777475
+23,Linda Utami,Staff,HR,2019-02-22,5903979,Kontrak,linda.utami@company.com,087114223633
+24,Bagus Ramadhan,Manager,IT,2019-07-24,17846276,Tetap,bagus.ramadhan@company.com,082067970820
+25,Eko Handayani,Staff,HR,2022-03-09,5970201,Tetap,eko.handayani@company.com,085618742930
+26,Rina Rahayu,Manager,IT,2019-04-06,18409248,Kontrak,rina.rahayu@company.com,083067418686
+27,Tono Putri,Supervisor,Marketing,2019-07-09,13816886,Kontrak,tono.putri@company.com,088380507338
+28,Rudi Prasetyo,Senior Staff,HR,2019-10-24,9274131,Tetap,rudi.prasetyo@company.com,088507497883
+29,Dewi Putri,Staff,HR,2019-09-03,6785394,Tetap,dewi.putri@company.com,089884231465
+30,Ahmad Supriyadi,Supervisor,Marketing,2019-10-08,14856325,Probation,ahmad.supriyadi@company.com,089760623742
+31,Ahmad Sari,Senior Staff,Finance,2020-11-23,8317782,Tetap,ahmad.sari@company.com,086435772945
+32,Rudi Supriyadi,Senior Staff,Marketing,2021-02-01,8922188,Probation,rudi.supriyadi@company.com,085278201677
+33,Ahmad Handayani,Supervisor,Finance,2020-06-03,12049206,Kontrak,ahmad.handayani@company.com,082224011538
+34,Bagus Handayani,Senior Staff,IT,2024-09-10,9782453,Tetap,bagus.handayani@company.com,085871743247
+35,Siti Rahayu,Supervisor,Finance,2021-10-07,12876288,Tetap,siti.rahayu@company.com,088958199946
+36,Joko Utami,Senior Staff,IT,2019-11-14,8160480,Tetap,joko.utami@company.com,085310195918
+37,Rosa Hermawan,Senior Staff,HR,2024-08-18,9959783,Kontrak,rosa.hermawan@company.com,083409076656
+38,Siti Hidayat,Supervisor,IT,2021-10-18,11242300,Kontrak,siti.hidayat@company.com,081547374338
+39,Maya Nugroho,Manager,Finance,2020-11-08,15862295,Kontrak,maya.nugroho@company.com,084993808565
+40,Nina Wati,Staff,IT,2020-12-11,6640783,Kontrak,nina.wati@company.com,084482141802
+41,Doni Wati,Manager,Marketing,2019-08-08,16674138,Kontrak,doni.wati@company.com,086796738787
+42,Linda Kusuma,Manager,HR,2022-06-09,15582343,Kontrak,linda.kusuma@company.com,087482848011
+43,Ayu Handayani,Senior Staff,IT,2019-05-06,9435169,Kontrak,ayu.handayani@company.com,081164313410
+44,Wulan Sari,Senior Staff,Finance,2022-10-17,7485053,Kontrak,wulan.sari@company.com,086111349421
+45,Dewi Kartika,Staff,IT,2023-09-22,6508754,Probation,dewi.kartika@company.com,086141226746
+46,Yuni Hidayat,Senior Staff,Finance,2024-02-24,8259642,Probation,yuni.hidayat@company.com,087049001493
+47,Tono Kartika,Senior Staff,HR,2020-07-22,8590250,Probation,tono.kartika@company.com,087739255769
+48,Tono Handayani,Manager,Finance,2021-04-14,19865264,Probation,tono.handayani@company.com,088106906538
+49,Bagus Anindya,Staff,HR,2023-08-26,6889913,Probation,bagus.anindya@company.com,085659161352
+50,Joko Supriyadi,Senior Staff,IT,2020-11-10,7942211,Tetap,joko.supriyadi@company.com,081632880459
