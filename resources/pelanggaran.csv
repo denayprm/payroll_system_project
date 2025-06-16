@@ -1,0 +1,184 @@
+pelanggaran_id,karyawan_id,tanggal,jenis_pelanggaran,deskripsi,tingkat_keparahan,sanksi_potongan
+1,6,2024-07-05,Terlambat Berulang,Deskripsi pelanggaran 1,Sedang,51449
+2,7,2024-07-15,Kelalaian Tugas,Deskripsi pelanggaran 2,Sedang,680292
+3,8,2024-07-04,Terlambat Berulang,Deskripsi pelanggaran 3,Berat,894170
+4,9,2024-07-01,Pelanggaran Dress Code,Deskripsi pelanggaran 4,Berat,94190
+5,10,2024-07-20,Terlambat Berulang,Deskripsi pelanggaran 5,Berat,363541
+6,12,2024-07-17,Absen Tanpa Keterangan,Deskripsi pelanggaran 6,Sedang,592157
+7,13,2024-07-17,Absen Tanpa Keterangan,Deskripsi pelanggaran 7,Berat,122240
+8,14,2024-07-02,Absen Tanpa Keterangan,Deskripsi pelanggaran 8,Berat,741931
+9,15,2024-07-06,Terlambat Berulang,Deskripsi pelanggaran 9,Sedang,895888
+10,21,2024-07-12,Terlambat Berulang,Deskripsi pelanggaran 10,Sedang,248686
+11,36,2024-07-13,Kelalaian Tugas,Deskripsi pelanggaran 11,Berat,206165
+12,38,2024-07-18,Kelalaian Tugas,Deskripsi pelanggaran 12,Berat,873228
+13,44,2024-07-05,Kelalaian Tugas,Deskripsi pelanggaran 13,Berat,143652
+14,1,2024-08-19,Pelanggaran Dress Code,Deskripsi pelanggaran 14,Berat,639753
+15,2,2024-08-07,Absen Tanpa Keterangan,Deskripsi pelanggaran 15,Ringan,164034
+16,6,2024-08-28,Kelalaian Tugas,Deskripsi pelanggaran 16,Berat,829351
+17,7,2024-08-22,Pelanggaran Dress Code,Deskripsi pelanggaran 17,Ringan,734089
+18,19,2024-08-28,Terlambat Berulang,Deskripsi pelanggaran 18,Sedang,235378
+19,22,2024-08-13,Terlambat Berulang,Deskripsi pelanggaran 19,Berat,834054
+20,23,2024-08-22,Kelalaian Tugas,Deskripsi pelanggaran 20,Berat,621453
+21,28,2024-08-14,Terlambat Berulang,Deskripsi pelanggaran 21,Ringan,619040
+22,32,2024-08-22,Kelalaian Tugas,Deskripsi pelanggaran 22,Berat,210640
+23,35,2024-08-23,Absen Tanpa Keterangan,Deskripsi pelanggaran 23,Sedang,583460
+24,43,2024-08-22,Pelanggaran Dress Code,Deskripsi pelanggaran 24,Ringan,952818
+25,50,2024-08-12,Absen Tanpa Keterangan,Deskripsi pelanggaran 25,Ringan,342263
+26,10,2024-09-28,Pelanggaran Dress Code,Deskripsi pelanggaran 26,Berat,804540
+27,12,2024-09-09,Absen Tanpa Keterangan,Deskripsi pelanggaran 27,Ringan,157810
+28,14,2024-09-23,Kelalaian Tugas,Deskripsi pelanggaran 28,Sedang,679124
+29,15,2024-09-26,Pelanggaran Dress Code,Deskripsi pelanggaran 29,Sedang,490651
+30,17,2024-09-23,Pelanggaran Dress Code,Deskripsi pelanggaran 30,Berat,821704
+31,18,2024-09-05,Absen Tanpa Keterangan,Deskripsi pelanggaran 31,Ringan,620349
+32,22,2024-09-05,Absen Tanpa Keterangan,Deskripsi pelanggaran 32,Ringan,482295
+33,23,2024-09-20,Absen Tanpa Keterangan,Deskripsi pelanggaran 33,Berat,724929
+34,28,2024-09-09,Terlambat Berulang,Deskripsi pelanggaran 34,Berat,986829
+35,30,2024-09-28,Terlambat Berulang,Deskripsi pelanggaran 35,Sedang,838705
+36,36,2024-09-04,Terlambat Berulang,Deskripsi pelanggaran 36,Berat,689892
+37,37,2024-09-05,Terlambat Berulang,Deskripsi pelanggaran 37,Ringan,916580
+38,41,2024-09-05,Terlambat Berulang,Deskripsi pelanggaran 38,Berat,245982
+39,42,2024-09-12,Pelanggaran Dress Code,Deskripsi pelanggaran 39,Berat,460239
+40,47,2024-09-08,Kelalaian Tugas,Deskripsi pelanggaran 40,Berat,737158
+41,49,2024-09-20,Terlambat Berulang,Deskripsi pelanggaran 41,Sedang,831109
+42,50,2024-09-20,Terlambat Berulang,Deskripsi pelanggaran 42,Ringan,232038
+43,2,2024-10-26,Terlambat Berulang,Deskripsi pelanggaran 43,Sedang,482788
+44,10,2024-10-16,Kelalaian Tugas,Deskripsi pelanggaran 44,Berat,113981
+45,14,2024-10-26,Kelalaian Tugas,Deskripsi pelanggaran 45,Sedang,335394
+46,17,2024-10-23,Absen Tanpa Keterangan,Deskripsi pelanggaran 46,Ringan,949147
+47,19,2024-10-21,Pelanggaran Dress Code,Deskripsi pelanggaran 47,Sedang,784184
+48,30,2024-10-09,Terlambat Berulang,Deskripsi pelanggaran 48,Ringan,383950
+49,31,2024-10-13,Absen Tanpa Keterangan,Deskripsi pelanggaran 49,Ringan,898909
+50,32,2024-10-10,Kelalaian Tugas,Deskripsi pelanggaran 50,Ringan,262163
+51,33,2024-10-01,Kelalaian Tugas,Deskripsi pelanggaran 51,Ringan,245630
+52,41,2024-10-27,Absen Tanpa Keterangan,Deskripsi pelanggaran 52,Sedang,59713
+53,44,2024-10-11,Kelalaian Tugas,Deskripsi pelanggaran 53,Sedang,625602
+54,46,2024-10-11,Terlambat Berulang,Deskripsi pelanggaran 54,Ringan,652106
+55,48,2024-10-05,Kelalaian Tugas,Deskripsi pelanggaran 55,Berat,120247
+56,1,2024-11-18,Absen Tanpa Keterangan,Deskripsi pelanggaran 56,Ringan,198916
+57,9,2024-11-03,Pelanggaran Dress Code,Deskripsi pelanggaran 57,Sedang,99040
+58,13,2024-11-18,Terlambat Berulang,Deskripsi pelanggaran 58,Ringan,443803
+59,17,2024-11-09,Absen Tanpa Keterangan,Deskripsi pelanggaran 59,Sedang,254068
+60,18,2024-11-10,Kelalaian Tugas,Deskripsi pelanggaran 60,Berat,412939
+61,20,2024-11-14,Kelalaian Tugas,Deskripsi pelanggaran 61,Berat,223115
+62,21,2024-11-09,Kelalaian Tugas,Deskripsi pelanggaran 62,Sedang,95078
+63,23,2024-11-14,Kelalaian Tugas,Deskripsi pelanggaran 63,Ringan,397524
+64,28,2024-11-11,Terlambat Berulang,Deskripsi pelanggaran 64,Berat,400319
+65,34,2024-11-06,Absen Tanpa Keterangan,Deskripsi pelanggaran 65,Ringan,974366
+66,38,2024-11-17,Kelalaian Tugas,Deskripsi pelanggaran 66,Sedang,195114
+67,39,2024-11-25,Terlambat Berulang,Deskripsi pelanggaran 67,Berat,994295
+68,42,2024-11-18,Absen Tanpa Keterangan,Deskripsi pelanggaran 68,Berat,851287
+69,45,2024-11-26,Kelalaian Tugas,Deskripsi pelanggaran 69,Ringan,133085
+70,46,2024-11-20,Terlambat Berulang,Deskripsi pelanggaran 70,Berat,882178
+71,50,2024-11-28,Pelanggaran Dress Code,Deskripsi pelanggaran 71,Ringan,257142
+72,2,2024-12-10,Pelanggaran Dress Code,Deskripsi pelanggaran 72,Berat,445686
+73,3,2024-12-18,Kelalaian Tugas,Deskripsi pelanggaran 73,Sedang,709639
+74,5,2024-12-10,Terlambat Berulang,Deskripsi pelanggaran 74,Sedang,975120
+75,7,2024-12-22,Pelanggaran Dress Code,Deskripsi pelanggaran 75,Berat,972707
+76,9,2024-12-14,Kelalaian Tugas,Deskripsi pelanggaran 76,Ringan,730704
+77,11,2024-12-11,Pelanggaran Dress Code,Deskripsi pelanggaran 77,Ringan,655095
+78,17,2024-12-07,Pelanggaran Dress Code,Deskripsi pelanggaran 78,Sedang,153644
+79,18,2024-12-10,Kelalaian Tugas,Deskripsi pelanggaran 79,Berat,383068
+80,19,2024-12-18,Kelalaian Tugas,Deskripsi pelanggaran 80,Berat,451474
+81,21,2024-12-11,Pelanggaran Dress Code,Deskripsi pelanggaran 81,Ringan,669832
+82,22,2024-12-08,Absen Tanpa Keterangan,Deskripsi pelanggaran 82,Berat,65013
+83,24,2024-12-03,Pelanggaran Dress Code,Deskripsi pelanggaran 83,Sedang,61943
+84,25,2024-12-13,Terlambat Berulang,Deskripsi pelanggaran 84,Ringan,661302
+85,30,2024-12-05,Pelanggaran Dress Code,Deskripsi pelanggaran 85,Sedang,381444
+86,32,2024-12-06,Pelanggaran Dress Code,Deskripsi pelanggaran 86,Sedang,295789
+87,34,2024-12-11,Terlambat Berulang,Deskripsi pelanggaran 87,Sedang,885915
+88,36,2024-12-25,Absen Tanpa Keterangan,Deskripsi pelanggaran 88,Ringan,480841
+89,43,2024-12-11,Pelanggaran Dress Code,Deskripsi pelanggaran 89,Sedang,140744
+90,45,2024-12-23,Terlambat Berulang,Deskripsi pelanggaran 90,Berat,680886
+91,46,2024-12-19,Pelanggaran Dress Code,Deskripsi pelanggaran 91,Berat,188520
+92,49,2024-12-04,Absen Tanpa Keterangan,Deskripsi pelanggaran 92,Sedang,130708
+93,1,2025-01-09,Terlambat Berulang,Deskripsi pelanggaran 93,Sedang,163231
+94,4,2025-01-01,Terlambat Berulang,Deskripsi pelanggaran 94,Sedang,639931
+95,6,2025-01-23,Terlambat Berulang,Deskripsi pelanggaran 95,Sedang,725311
+96,9,2025-01-28,Kelalaian Tugas,Deskripsi pelanggaran 96,Berat,633348
+97,10,2025-01-14,Absen Tanpa Keterangan,Deskripsi pelanggaran 97,Berat,447416
+98,12,2025-01-03,Absen Tanpa Keterangan,Deskripsi pelanggaran 98,Ringan,812486
+99,14,2025-01-23,Absen Tanpa Keterangan,Deskripsi pelanggaran 99,Ringan,131812
+100,17,2025-01-02,Kelalaian Tugas,Deskripsi pelanggaran 100,Berat,90609
+101,18,2025-01-12,Absen Tanpa Keterangan,Deskripsi pelanggaran 101,Berat,728047
+102,21,2025-01-01,Pelanggaran Dress Code,Deskripsi pelanggaran 102,Berat,889671
+103,26,2025-01-12,Kelalaian Tugas,Deskripsi pelanggaran 103,Sedang,659983
+104,27,2025-01-03,Terlambat Berulang,Deskripsi pelanggaran 104,Sedang,761170
+105,29,2025-01-02,Absen Tanpa Keterangan,Deskripsi pelanggaran 105,Berat,625794
+106,31,2025-01-07,Terlambat Berulang,Deskripsi pelanggaran 106,Berat,707968
+107,35,2025-01-14,Kelalaian Tugas,Deskripsi pelanggaran 107,Ringan,737947
+108,43,2025-01-11,Absen Tanpa Keterangan,Deskripsi pelanggaran 108,Berat,918978
+109,47,2025-01-10,Pelanggaran Dress Code,Deskripsi pelanggaran 109,Sedang,492122
+110,48,2025-01-13,Terlambat Berulang,Deskripsi pelanggaran 110,Sedang,85247
+111,50,2025-01-22,Pelanggaran Dress Code,Deskripsi pelanggaran 111,Berat,936295
+112,1,2025-02-10,Terlambat Berulang,Deskripsi pelanggaran 112,Berat,749646
+113,3,2025-02-17,Terlambat Berulang,Deskripsi pelanggaran 113,Sedang,670180
+114,4,2025-02-10,Kelalaian Tugas,Deskripsi pelanggaran 114,Ringan,449570
+115,7,2025-02-08,Pelanggaran Dress Code,Deskripsi pelanggaran 115,Berat,756407
+116,9,2025-02-25,Absen Tanpa Keterangan,Deskripsi pelanggaran 116,Sedang,62394
+117,14,2025-02-19,Terlambat Berulang,Deskripsi pelanggaran 117,Berat,915627
+118,16,2025-02-11,Absen Tanpa Keterangan,Deskripsi pelanggaran 118,Berat,318578
+119,18,2025-02-26,Absen Tanpa Keterangan,Deskripsi pelanggaran 119,Sedang,257050
+120,20,2025-02-01,Kelalaian Tugas,Deskripsi pelanggaran 120,Sedang,338578
+121,22,2025-02-12,Terlambat Berulang,Deskripsi pelanggaran 121,Ringan,330034
+122,24,2025-02-15,Terlambat Berulang,Deskripsi pelanggaran 122,Berat,354060
+123,27,2025-02-07,Pelanggaran Dress Code,Deskripsi pelanggaran 123,Berat,741846
+124,32,2025-02-14,Kelalaian Tugas,Deskripsi pelanggaran 124,Sedang,359143
+125,33,2025-02-20,Pelanggaran Dress Code,Deskripsi pelanggaran 125,Ringan,190901
+126,37,2025-02-16,Kelalaian Tugas,Deskripsi pelanggaran 126,Sedang,242893
+127,46,2025-02-27,Kelalaian Tugas,Deskripsi pelanggaran 127,Berat,397850
+128,49,2025-02-14,Pelanggaran Dress Code,Deskripsi pelanggaran 128,Sedang,424533
+129,2,2025-03-08,Pelanggaran Dress Code,Deskripsi pelanggaran 129,Ringan,308049
+130,4,2025-03-27,Absen Tanpa Keterangan,Deskripsi pelanggaran 130,Berat,521260
+131,6,2025-03-02,Terlambat Berulang,Deskripsi pelanggaran 131,Berat,57955
+132,16,2025-03-13,Absen Tanpa Keterangan,Deskripsi pelanggaran 132,Ringan,803613
+133,17,2025-03-25,Pelanggaran Dress Code,Deskripsi pelanggaran 133,Berat,332479
+134,30,2025-03-27,Kelalaian Tugas,Deskripsi pelanggaran 134,Sedang,607384
+135,33,2025-03-26,Absen Tanpa Keterangan,Deskripsi pelanggaran 135,Sedang,481088
+136,34,2025-03-06,Pelanggaran Dress Code,Deskripsi pelanggaran 136,Berat,750791
+137,35,2025-03-12,Kelalaian Tugas,Deskripsi pelanggaran 137,Sedang,373747
+138,42,2025-03-21,Pelanggaran Dress Code,Deskripsi pelanggaran 138,Sedang,389169
+139,50,2025-03-13,Kelalaian Tugas,Deskripsi pelanggaran 139,Sedang,952510
+140,2,2025-04-04,Absen Tanpa Keterangan,Deskripsi pelanggaran 140,Sedang,479348
+141,3,2025-04-21,Pelanggaran Dress Code,Deskripsi pelanggaran 141,Berat,509821
+142,9,2025-04-13,Terlambat Berulang,Deskripsi pelanggaran 142,Berat,101199
+143,10,2025-04-25,Kelalaian Tugas,Deskripsi pelanggaran 143,Ringan,228423
+144,12,2025-04-04,Absen Tanpa Keterangan,Deskripsi pelanggaran 144,Ringan,537720
+145,13,2025-04-25,Absen Tanpa Keterangan,Deskripsi pelanggaran 145,Sedang,123795
+146,14,2025-04-11,Kelalaian Tugas,Deskripsi pelanggaran 146,Berat,407113
+147,25,2025-04-13,Kelalaian Tugas,Deskripsi pelanggaran 147,Sedang,270631
+148,27,2025-04-15,Pelanggaran Dress Code,Deskripsi pelanggaran 148,Berat,656091
+149,30,2025-04-10,Terlambat Berulang,Deskripsi pelanggaran 149,Berat,220312
+150,31,2025-04-02,Absen Tanpa Keterangan,Deskripsi pelanggaran 150,Ringan,157744
+151,36,2025-04-06,Terlambat Berulang,Deskripsi pelanggaran 151,Ringan,687276
+152,38,2025-04-16,Kelalaian Tugas,Deskripsi pelanggaran 152,Berat,825556
+153,42,2025-04-25,Absen Tanpa Keterangan,Deskripsi pelanggaran 153,Sedang,519807
+154,43,2025-04-23,Absen Tanpa Keterangan,Deskripsi pelanggaran 154,Berat,107764
+155,46,2025-04-27,Kelalaian Tugas,Deskripsi pelanggaran 155,Berat,157627
+156,48,2025-04-22,Kelalaian Tugas,Deskripsi pelanggaran 156,Ringan,544929
+157,49,2025-04-19,Absen Tanpa Keterangan,Deskripsi pelanggaran 157,Ringan,718908
+158,4,2025-05-15,Terlambat Berulang,Deskripsi pelanggaran 158,Berat,757680
+159,5,2025-05-24,Kelalaian Tugas,Deskripsi pelanggaran 159,Sedang,824276
+160,9,2025-05-04,Terlambat Berulang,Deskripsi pelanggaran 160,Berat,761471
+161,11,2025-05-07,Absen Tanpa Keterangan,Deskripsi pelanggaran 161,Sedang,414656
+162,12,2025-05-17,Terlambat Berulang,Deskripsi pelanggaran 162,Sedang,435165
+163,14,2025-05-03,Absen Tanpa Keterangan,Deskripsi pelanggaran 163,Ringan,438291
+164,18,2025-05-22,Kelalaian Tugas,Deskripsi pelanggaran 164,Berat,517720
+165,20,2025-05-24,Pelanggaran Dress Code,Deskripsi pelanggaran 165,Sedang,164587
+166,21,2025-05-13,Kelalaian Tugas,Deskripsi pelanggaran 166,Sedang,671554
+167,29,2025-05-19,Absen Tanpa Keterangan,Deskripsi pelanggaran 167,Sedang,521907
+168,30,2025-05-08,Kelalaian Tugas,Deskripsi pelanggaran 168,Ringan,370850
+169,31,2025-05-03,Terlambat Berulang,Deskripsi pelanggaran 169,Berat,540680
+170,32,2025-05-16,Absen Tanpa Keterangan,Deskripsi pelanggaran 170,Ringan,108394
+171,47,2025-05-14,Absen Tanpa Keterangan,Deskripsi pelanggaran 171,Ringan,633747
+172,3,2025-06-03,Absen Tanpa Keterangan,Deskripsi pelanggaran 172,Ringan,139188
+173,8,2025-06-26,Pelanggaran Dress Code,Deskripsi pelanggaran 173,Berat,140405
+174,11,2025-06-13,Absen Tanpa Keterangan,Deskripsi pelanggaran 174,Berat,149032
+175,13,2025-06-23,Terlambat Berulang,Deskripsi pelanggaran 175,Sedang,778738
+176,16,2025-06-23,Terlambat Berulang,Deskripsi pelanggaran 176,Sedang,406896
+177,18,2025-06-11,Terlambat Berulang,Deskripsi pelanggaran 177,Berat,592872
+178,21,2025-06-20,Terlambat Berulang,Deskripsi pelanggaran 178,Berat,938493
+179,22,2025-06-20,Terlambat Berulang,Deskripsi pelanggaran 179,Ringan,873089
+180,23,2025-06-23,Kelalaian Tugas,Deskripsi pelanggaran 180,Sedang,686702
+181,29,2025-06-28,Kelalaian Tugas,Deskripsi pelanggaran 181,Berat,709450
+182,39,2025-06-21,Kelalaian Tugas,Deskripsi pelanggaran 182,Berat,573050
+183,46,2025-06-05,Absen Tanpa Keterangan,Deskripsi pelanggaran 183,Sedang,777193
