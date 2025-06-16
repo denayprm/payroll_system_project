@@ -129,6 +129,7 @@ def visualize(summary, dept_summary):
         )
         fig5.update_layout(xaxis={'categoryorder': 'total descending'})
         pio.write_html(fig5, file='resources/rekapitulasi_12bulan_per_karyawan.html', auto_open=False)
+
         print("🗂️ Grafik interaktif informasi 12 bulan disimpan di 'resources/rekapitulasi_12bulan_per_karyawan.html'")
 
     print("🌐 Semua grafik interaktif disimpan ke dalam folder 'resources' sebagai file HTML.")
