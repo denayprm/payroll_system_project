@@ -5,6 +5,7 @@ try:
     import pandas as pd
     import os
     import plotly.express as px
+    import plotly.graph_objects as go
     import plotly.io as pio
 except ImportError:
     import sys
@@ -15,59 +16,119 @@ except ImportError:
     import pandas as pd
     import os
     import plotly.express as px
+    import plotly.graph_objects as go
     import plotly.io as pio
 
 def visualize(summary, dept_summary):
     os.makedirs('resources', exist_ok=True)
 
-    # ✅ Tampilkan 5 karyawan dengan gaji tertinggi
-    top_earners = summary.sort_values('total_compensation', ascending=False).head(5)
-    print("\n📋 5 Karyawan dengan Gaji Tertinggi:")
-    print(top_earners[['nama', 'departemen', 'total_compensation']])
+    # 1. Daftar Gaji Tertinggi
+    top10 = summary.sort_values('total_compensation', ascending=False).head(10)
 
-    # ✅ Buat visualisasi ramah anak-anak (warna cerah dan label besar)
+    # 2. Daftar Gaji Terendah
+    bottom10 = summary.sort_values('total_compensation', ascending=True).head(10)
+
+    # 3. Grafik Total Gaji, Bonus, Potongan per Bulan
+    if {'bulan', 'tahun'}.issubset(summary.columns):
+        bulanan = summary.groupby(['tahun', 'bulan']).agg({
+            'total_compensation': 'sum',
+            'total_bonus': 'sum',
+            'total_potongan': 'sum'
+        }).reset_index().sort_values(['tahun', 'bulan'])
+    else:
+        bulanan = None
+
+    # 4. Visualisasi Kinerja Karyawan & Kehadiran (statis)
     plt.figure(figsize=(18, 12))
 
-    # 1. Gaji Tertinggi
     plt.subplot(2, 2, 1)
-    sns.barplot(x='total_compensation', y='nama', data=top_earners, palette='YlGnBu')
-    plt.title('5 Karyawan dengan Gaji Tertinggi', fontsize=16)
-    plt.xlabel('Total Gaji (Rp)', fontsize=12)
-    plt.ylabel('Nama Karyawan', fontsize=12)
+    sns.barplot(x='total_compensation', y='nama', data=top10, palette='Greens_r')
+    plt.title('10 Karyawan dengan Gaji Tertinggi')
 
-    # 2. Kompensasi per Departemen (Boxplot)
     plt.subplot(2, 2, 2)
-    sns.boxplot(x='departemen', y='total_compensation', data=summary, palette='Set2')
-    plt.title('Gaji per Departemen', fontsize=16)
-    plt.xticks(rotation=45)
+    sns.barplot(x='total_compensation', y='nama', data=bottom10, palette='Reds_r')
+    plt.title('10 Karyawan dengan Gaji Terendah')
 
-    # 3. Bonus per Departemen
     plt.subplot(2, 2, 3)
-    dept_summary['total_bonus'].plot(kind='bar', color='orange')
-    plt.title('Total Bonus per Departemen', fontsize=16)
-    plt.xticks(rotation=45)
-    plt.ylabel('Bonus (Rp)', fontsize=12)
+    sns.scatterplot(data=summary, x='total_hari_hadir', y='total_compensation', hue='departemen')
+    plt.title('Kinerja: Kehadiran vs Gaji')
 
-    # 4. Korelasi antar variabel
     plt.subplot(2, 2, 4)
     corr = summary[['total_hari_hadir', 'total_jam_lembur', 'total_bonus', 'total_potongan', 'total_compensation']].corr()
     sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f')
-    plt.title('Korelasi Antar Variabel', fontsize=16)
+    plt.title('Korelasi Variabel')
 
     plt.tight_layout()
     plt.savefig('resources/payroll_report.png')
     plt.close()
-    print("\n📊 Grafik statis disimpan sebagai 'resources/payroll_report.png'")
+    print("📊 Grafik statis disimpan sebagai 'resources/payroll_report.png'")
 
-    # ✅ Grafik Interaktif dengan Plotly
-    fig = px.bar(
-        top_earners,
+    # 5. Grafik Interaktif Plotly (disimpan sebagai HTML)
+    fig1 = px.bar(
+        top10,
         x='total_compensation',
         y='nama',
         orientation='h',
         color='departemen',
-        title='5 Karyawan dengan Gaji Tertinggi (Interaktif)',
-        labels={'total_compensation': 'Total Gaji (Rp)', 'nama': 'Nama Karyawan'}
+        title='🔝 Top 10 Gaji Tertinggi',
+        labels={'total_compensation': 'Total Gaji', 'nama': 'Nama Karyawan'}
     )
-    pio.write_html(fig, file='resources/top_earners_interactive.html', auto_open=False)
-    print("🌐 Grafik interaktif disimpan sebagai 'resources/top_earners_interactive.html'")
+    pio.write_html(fig1, file='resources/top10_gaji_tertinggi.html', auto_open=False)
+
+    fig2 = px.bar(
+        bottom10,
+        x='total_compensation',
+        y='nama',
+        orientation='h',
+        color='departemen',
+        title='🔻 10 Gaji Terendah',
+        labels={'total_compensation': 'Total Gaji', 'nama': 'Nama Karyawan'}
+    )
+    pio.write_html(fig2, file='resources/bottom10_gaji_terendah.html', auto_open=False)
+
+    if bulanan is not None:
+        fig3 = go.Figure()
+        fig3.add_trace(go.Bar(name='Gaji', x=bulanan['bulan'], y=bulanan['total_compensation']))
+        fig3.add_trace(go.Bar(name='Bonus', x=bulanan['bulan'], y=bulanan['total_bonus']))
+        fig3.add_trace(go.Bar(name='Potongan', x=bulanan['bulan'], y=bulanan['total_potongan']))
+        fig3.update_layout(
+            title='📆 Statistik Gaji, Bonus, Potongan per Bulan',
+            barmode='group'
+        )
+        pio.write_html(fig3, file='resources/statistik_perbulan.html', auto_open=False)
+
+    fig4 = px.scatter(
+        summary,
+        x='total_hari_hadir',
+        y='total_compensation',
+        color='departemen',
+        hover_name='nama',
+        title='📈 Kehadiran vs Gaji',
+        labels={'total_hari_hadir': 'Hari Hadir', 'total_compensation': 'Gaji'}
+    )
+    pio.write_html(fig4, file='resources/kehadiran_vs_gaji.html', auto_open=False)
+
+        # Grafik Informasi Lengkap Semua Karyawan per Bulan (12 bulan)
+    if {'bulan', 'tahun'}.issubset(summary.columns):
+        info12 = summary.copy()
+        info12['periode'] = info12['bulan'] + ' ' + info12['tahun'].astype(str)
+
+        fig5 = px.bar(
+            info12,
+            x='nama',
+            y='total_compensation',
+            color='departemen',
+            animation_frame='periode',
+            hover_data=['total_bonus', 'total_potongan'],
+            title='📅 Gaji Bersih, Bonus, dan Potongan Selama 12 Bulan per Karyawan',
+            labels={
+                'total_compensation': 'Gaji Bersih',
+                'nama': 'Nama Karyawan',
+                'departemen': 'Departemen'
+            }
+        )
+        fig5.update_layout(xaxis={'categoryorder': 'total descending'})
+        pio.write_html(fig5, file='resources/rekapitulasi_12bulan_per_karyawan.html', auto_open=False)
+        print("🗂️ Grafik interaktif informasi 12 bulan disimpan di 'resources/rekapitulasi_12bulan_per_karyawan.html'")
+
+    print("🌐 Semua grafik interaktif disimpan ke dalam folder 'resources' sebagai file HTML.")
