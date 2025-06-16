@@ -1,0 +1,32 @@
+---
+title: "Payroll System Project"
+author: "Deni Permana - 2210512015"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 0. Import Library dan Import Dataset
+
+### Import Library
+
+Memuat paket yang diperlukan
+
+```{r}
+
+```
+
+**Penjelasan:** 
+
+### Import Dataset
+
+Membaca dataset dari file CSV ke dalam R.
+
+```{r}
+
+```
+
+**Penjelasan:** 
