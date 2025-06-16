@@ -10,3 +10,5 @@ def clean_data(df_karyawan, df_kehadiran, df_lembur, df_pelanggaran, df_bonus):
     df_lembur['durasi_jam'] = pd.to_numeric(df_lembur['durasi_jam'], errors='coerce')
 
     return df_karyawan, df_kehadiran, df_lembur, df_pelanggaran, df_bonus
+
+print("\n📊 Data Cleaner telah dilakukan...")

@@ -16,3 +16,5 @@ def analyze(summary):
     }).rename(columns={'karyawan_id': 'jumlah_karyawan'})
 
     return summary, department_summary
+
+print("\n📊 Data Analyzer telah dilakukan...")

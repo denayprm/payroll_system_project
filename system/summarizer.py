@@ -59,3 +59,5 @@ def create_daily_records(df_karyawan, df_kehadiran, df_lembur, df_pelanggaran):
     daily['tahun'] = daily['tanggal'].dt.year
     daily.fillna(0, inplace=True)
     return daily
+
+print("\n📊 Data Summarizer telah dilakukan...")

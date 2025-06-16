@@ -25,7 +25,7 @@ def main():
     summary, dept_summary = analyze(summary)
     visualize(summary, dept_summary)
 
-    print("\n✅ Analisis payroll selesai. Hasil disimpan di folder 'resources'.")
+    print("\n✅ Analisis payroll selesai. Hasil telah disimpan.")
 
 if __name__ == '__main__':
     main()

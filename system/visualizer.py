@@ -59,9 +59,9 @@ def visualize(summary, dept_summary):
     plt.title('Korelasi Variabel')
 
     plt.tight_layout()
-    plt.savefig('resources/payroll_report.png')
+    plt.savefig('resources/output/payroll_report.png')
     plt.close()
-    print("📊 Grafik statis disimpan sebagai 'resources/payroll_report.png'")
+    print("📊 Grafik statis disimpan sebagai 'resources/output/payroll_report.png'")
 
     # 5. Grafik Interaktif Plotly (disimpan sebagai HTML)
     fig1 = px.bar(
@@ -73,7 +73,7 @@ def visualize(summary, dept_summary):
         title='🔝 Top 10 Gaji Tertinggi',
         labels={'total_compensation': 'Total Gaji', 'nama': 'Nama Karyawan'}
     )
-    pio.write_html(fig1, file='resources/top10_gaji_tertinggi.html', auto_open=False)
+    pio.write_html(fig1, file='resources/output/top10_gaji_tertinggi.html', auto_open=False)
 
     fig2 = px.bar(
         bottom10,
@@ -84,7 +84,7 @@ def visualize(summary, dept_summary):
         title='🔻 10 Gaji Terendah',
         labels={'total_compensation': 'Total Gaji', 'nama': 'Nama Karyawan'}
     )
-    pio.write_html(fig2, file='resources/bottom10_gaji_terendah.html', auto_open=False)
+    pio.write_html(fig2, file='resources/output/bottom10_gaji_terendah.html', auto_open=False)
 
     if bulanan is not None:
         fig3 = go.Figure()
@@ -95,7 +95,7 @@ def visualize(summary, dept_summary):
             title='📆 Statistik Gaji, Bonus, Potongan per Bulan',
             barmode='group'
         )
-        pio.write_html(fig3, file='resources/statistik_perbulan.html', auto_open=False)
+        pio.write_html(fig3, file='resources/output/statistik_perbulan.html', auto_open=False)
 
     fig4 = px.scatter(
         summary,
@@ -106,7 +106,7 @@ def visualize(summary, dept_summary):
         title='📈 Kehadiran vs Gaji',
         labels={'total_hari_hadir': 'Hari Hadir', 'total_compensation': 'Gaji'}
     )
-    pio.write_html(fig4, file='resources/kehadiran_vs_gaji.html', auto_open=False)
+    pio.write_html(fig4, file='resources/output/kehadiran_vs_gaji.html', auto_open=False)
 
         # Grafik Informasi Lengkap Semua Karyawan per Bulan (12 bulan)
     if {'bulan', 'tahun'}.issubset(summary.columns):
@@ -128,8 +128,8 @@ def visualize(summary, dept_summary):
             }
         )
         fig5.update_layout(xaxis={'categoryorder': 'total descending'})
-        pio.write_html(fig5, file='resources/rekapitulasi_12bulan_per_karyawan.html', auto_open=False)
+        pio.write_html(fig5, file='resources/output/rekapitulasi_12bulan_per_karyawan.html', auto_open=False)
 
-        print("🗂️ Grafik interaktif informasi 12 bulan disimpan di 'resources/rekapitulasi_12bulan_per_karyawan.html'")
+        print("🗂️ Grafik interaktif informasi 12 bulan disimpan di 'resources/output/rekapitulasi_12bulan_per_karyawan.html'")
 
-    print("🌐 Semua grafik interaktif disimpan ke dalam folder 'resources' sebagai file HTML.")
+    print("🌐 Semua grafik interaktif disimpan ke dalam folder 'resources/output' sebagai file HTML.")

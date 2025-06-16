@@ -6,11 +6,11 @@ class DataLoader:
         self.data_dir = data_dir
 
     def load_data(self):
-        df_karyawan = pd.read_csv(f'{self.data_dir}/karyawan.csv')
-        df_kehadiran = pd.read_csv(f'{self.data_dir}/kehadiran.csv')
-        df_lembur = pd.read_csv(f'{self.data_dir}/lembur.csv')
-        df_pelanggaran = pd.read_csv(f'{self.data_dir}/pelanggaran.csv')
-        df_bonus = pd.read_csv(f'{self.data_dir}/bonus.csv')
+        df_karyawan = pd.read_csv(f'{self.data_dir}/main_data/karyawan.csv')
+        df_kehadiran = pd.read_csv(f'{self.data_dir}/main_data/kehadiran.csv')
+        df_lembur = pd.read_csv(f'{self.data_dir}/main_data/lembur.csv')
+        df_pelanggaran = pd.read_csv(f'{self.data_dir}/main_data/pelanggaran.csv')
+        df_bonus = pd.read_csv(f'{self.data_dir}/main_data/bonus.csv')
 
         df_karyawan['tanggal_masuk'] = pd.to_datetime(df_karyawan['tanggal_masuk'])
         df_kehadiran['tanggal'] = pd.to_datetime(df_kehadiran['tanggal'])
@@ -22,3 +22,5 @@ class DataLoader:
         df_pelanggaran['tanggal'] = pd.to_datetime(df_pelanggaran['tanggal'])
 
         return df_karyawan, df_kehadiran, df_lembur, df_pelanggaran, df_bonus
+
+print("\n📊 Data Loader telah dilakukan...")
