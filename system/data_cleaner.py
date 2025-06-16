@@ -1,5 +1,11 @@
 # data_cleaner.py
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pandas'])
+    import pandas as pd
 
 def clean_data(df_karyawan, df_kehadiran, df_lembur, df_pelanggaran, df_bonus):
     df_karyawan.drop_duplicates(inplace=True)

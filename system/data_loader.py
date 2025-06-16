@@ -1,5 +1,11 @@
 # data_loader.py
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pandas'])
+    import pandas as pd
 
 class DataLoader:
     def __init__(self, data_dir='resources'):

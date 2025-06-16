@@ -1,5 +1,11 @@
 # summarizer.py
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pandas'])
+    import pandas as pd
 
 def create_monthly_summary(df_karyawan, df_kehadiran, df_lembur, df_pelanggaran, df_bonus):
     # Ambil info bulan dan tahun dari df_bonus untuk keperluan grafik

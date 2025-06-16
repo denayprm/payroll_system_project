@@ -1,5 +1,11 @@
 # analyzer.py
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pandas'])
+    import pandas as pd
 
 def analyze(summary):
     summary['total_compensation'] = summary['gaji_pokok'] + summary['total_bonus'] - summary['total_potongan']
