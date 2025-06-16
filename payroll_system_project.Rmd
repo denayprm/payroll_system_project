@@ -16,10 +16,22 @@ knitr::opts_chunk$set(echo = TRUE)
 Memuat paket yang diperlukan
 
 ```{r}
+if (!requireNamespace("readr")) install.packages("readr")
+if (!requireNamespace("dplyr")) install.packages("dplyr")
+if (!requireNamespace("ggplot2")) install.packages("ggplot2")
+if (!requireNamespace("gridExtra")) install.packages("gridExtra")
+if (!requireNamespace("reshape2")) install.packages("reshape2")
 
+library(readr)  # Untuk membaca data dengan cepat dari berbagai format seperti CSV
+library(dplyr)  # Untuk manipulasi data dengan sintaks yang bersih dan intuitif
+
+library(ggplot2)  # Paket grafis yang powerful untuk membuat visualisasi data
+library(gridExtra)  # Untuk menampilkan beberapa plot dalam satu tampilan
+
+library(reshape2)  # Memudahkan mengubah data antara format lebar dan panjang
 ```
 
-**Penjelasan:** 
+**Penjelasan:** Memuat paket(library) yang diperlukan. 'readr' untuk membaca data dari file CSV; 'dplyr' untuk manipulasi data; 'ggplot2' untuk visualisasi data; 'gridExtra' menampikan beberapa plot; dan 'reshape2' untuk mengubah format data
 
 ### Import Dataset
 
