@@ -26,7 +26,6 @@ def main():
 
     print("\n✅ Analisis payroll selesai. Hasil telah disimpan.\n")
 
-    # Tambahan: Copyright + Tanggal dan Waktu (WIB)
     now = datetime.now()
     wib_time = now.strftime("%A, %d-%m-%Y | %H:%M:%S WIB")
     print("© 2025 Deni Permana |", wib_time , "\n")
