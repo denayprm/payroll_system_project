@@ -70,10 +70,10 @@ def visualize(summary, dept_summary):
         y='nama',
         orientation='h',
         color='departemen',
-        title='🔝 Top 10 Gaji Tertinggi',
+        title='🔝 Daftar Gaji Tertinggi',
         labels={'total_compensation': 'Total Gaji', 'nama': 'Nama Karyawan'}
     )
-    pio.write_html(fig1, file='resources/output/top10_gaji_tertinggi.html', auto_open=False)
+    pio.write_html(fig1, file='resources/output/daftar_gaji_tertinggi.html', auto_open=False)
 
     fig2 = px.bar(
         bottom10,
@@ -81,10 +81,10 @@ def visualize(summary, dept_summary):
         y='nama',
         orientation='h',
         color='departemen',
-        title='🔻 10 Gaji Terendah',
+        title='🔻 Daftar Gaji Terendah',
         labels={'total_compensation': 'Total Gaji', 'nama': 'Nama Karyawan'}
     )
-    pio.write_html(fig2, file='resources/output/bottom10_gaji_terendah.html', auto_open=False)
+    pio.write_html(fig2, file='resources/output/daftar_gaji_terendah.html', auto_open=False)
 
     if bulanan is not None:
         fig3 = go.Figure()
